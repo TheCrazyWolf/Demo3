@@ -10,17 +10,16 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Demo3
+namespace Demo3.Forms
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Логика взаимодействия для WindowServices.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class WindowServices : Window
     {
-        public MainWindow()
+        public WindowServices()
         {
             InitializeComponent();
         }
