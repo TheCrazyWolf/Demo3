@@ -6,6 +6,15 @@
         xmlns:local="clr-namespace:Demo3.Forms"
         mc:Ignorable="d"
         Title="Меню" MinHeight="450" MinWidth="800" Icon="/Demo3;component/source/beauty_logo.ico" Width="450" Height="367">
+
+    <Window.Resources>
+        <Style x:Key="bt"  TargetType="Button">
+            <Setter Property="Margin" Value="50"/>
+            <Setter Property="Background" Value="Black"/>
+        </Style>
+
+    </Window.Resources>
+
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="80*"/>
@@ -22,6 +31,6 @@
         <Button x:Name="btn_showClientServices" Click="Btn_showClientServices_Click" Content="Ближашие записи" Grid.Column="1" Margin="130,0,175,75" Grid.Row="1" Height="40" VerticalAlignment="Bottom"/>
         <Button x:Name="btn_write" Click="Btn_write_Click" Content="Записать клиента" Visibility="Hidden" Grid.Column="1" Margin="130,0,175,30" Grid.Row="1" Height="40" VerticalAlignment="Bottom"/>
         <Button x:Name="btn_fije" Click="Btn_fije_Click" Content="фыв" Visibility="Visible" Grid.Column="1" Margin="130,0,175,39" Grid.Row="2" Height="40" VerticalAlignment="Bottom"/>
-        <Button x:Name="btn_back" Click="Btn_back_Click"  Content="Назад" Grid.Column="1" HorizontalAlignment="Left" Grid.Row="1" VerticalAlignment="Top" Width="70" Height="45"/>
+        <Button x:Name="btn_back" Click="Btn_back_Click"  Content="Назад" Grid.Column="1" HorizontalAlignment="Left" Grid.Row="1" VerticalAlignment="Top" Width="70" Height="45" />
     </Grid>
 </Window>

@@ -6,6 +6,22 @@
         xmlns:local="clr-namespace:Demo3.Forms"
         mc:Ignorable="d"
         Title="Авторизация" MinHeight="450" MinWidth="800" Icon="/Demo3;component/source/beauty_logo.ico" Width="450" Height="367">
+
+
+    <Window.Resources>
+        <Style  TargetType="Button">
+            <Setter Property="Margin" Value="50"/>
+            <Setter Property="Background" Value="Black"/>
+            <Setter Property="ToolTip" Value="Это кнопка"/>
+        </Style>
+
+        <Style TargetType="TextBox" >
+            <Setter Property="ToolTip" Value="Это  поле"/>
+        </Style>
+        
+        
+    </Window.Resources>
+    
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="80*"/>
@@ -21,7 +37,10 @@
         <TextBox x:Name="tbox_login" Grid.Column="1" Height="23" Margin="160,111,240,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top"/>
         <PasswordBox x:Name="tbox_password" Grid.Column="1" Margin="160,147,240,0" Grid.Row="1" VerticalAlignment="Top" Height="23"/>
         <Button x:Name="btn_enter" Click="Btn_enter_Click" Content="Войти" Grid.Column="1" Margin="160,0,0,50" Grid.Row="1" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="75"/>
-        <Button x:Name="btn_enter_as_guest" Click="Btn_enter_as_guest_Click" Content="Войти как гость" Grid.Column="1" Margin="250,0,240,50" Grid.Row="1" Height="20" VerticalAlignment="Bottom"/>
+        <Button x:Name="btn_enter_as_guest" Click="Btn_enter_as_guest_Click"
+                ToolTip="войти как гость"
+                
+                Content="Войти как гость" Grid.Column="1" Margin="250,0,240,50" Grid.Row="1" Height="20" VerticalAlignment="Bottom"/>
 
     </Grid>
 </Window>
