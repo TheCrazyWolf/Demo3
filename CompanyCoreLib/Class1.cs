@@ -19,7 +19,24 @@ namespace CompanyCoreLib
         public List<DateTime> PopularMonths(List<DateTime> dates)
         {
 
-            return new List<DateTime>();
+            List<DateTime> newList = new List<DateTime>();
+
+            foreach ( var  item in  dates)
+            {
+                var d = new DateTime();
+                d= d.AddYears(item.Year);
+                d= d.AddMonths(item.Month);
+               d= d.AddDays(item.Day);
+
+                newList.Add(d); 
+            }
+
+            newList = newList.Distinct().ToList();
+
+            newList.Sort();
+
+
+            return newList;
         }
         
     }
